@@ -29,8 +29,9 @@ plugins:
 
 # Sidebar link settings
 sidebar_home_link:  true
-# sidebar_home_link_path: '/blog' # By default, this is the root of the site.
-                                  # Otherwise it can override the sidebar home link.
+# blog_home_path: '/blog/'        # By default, this is the root of the site.
+                                  # Otherwise it can override the home page path, meant for a blog.
+                                  # Note that it MUST have a trailing slash.
 # sidebar_main_link: '/'
 # sidebar_blog_link:  '/blog'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,

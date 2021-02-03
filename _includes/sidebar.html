@@ -1,8 +1,9 @@
 <div id="sidebar">
   <header>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-      <a href="{{ site.sidebar_home_link_path | default: "/" | relative_url }}">
-        {% unless page.url == "/" %}
+      <a href="{{ site.blog_home_path | default: "/" | relative_url }}">
+        {% assign root_path = site.blog_home_path | default: "/" | relative_url %}
+        {% unless page.url == root_path %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
         {% endunless %}
         {{ site.title }}
